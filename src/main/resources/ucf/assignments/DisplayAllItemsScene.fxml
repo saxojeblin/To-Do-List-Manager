@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
+   <children>
+      <TextArea fx:id="allItemsTextArea" cache="true" editable="false" focusTraversable="false" layoutX="48.0" layoutY="59.0" pickOnBounds="false" prefHeight="255.0" prefWidth="555.0" promptText="(Please press 'Display Items' to see all items.)" style="-fx-border-color: #000000;">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <Text layoutX="279.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Items">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="doneDisplayAllButton" focusTraversable="false" layoutX="414.0" layoutY="338.0" mnemonicParsing="false" onAction="#doneDisplayAllButtonAction" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #37B958; -fx-border-color: #000000;" text="Done">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button focusTraversable="false" layoutX="110.0" layoutY="338.0" mnemonicParsing="false" onAction="#fillAllItemsText" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #9D98F7; -fx-border-color: #000000;" text="Display Items" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

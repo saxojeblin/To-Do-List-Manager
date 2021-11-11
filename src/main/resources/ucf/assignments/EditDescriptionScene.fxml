@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
+   <children>
+      <Text layoutX="201.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter New Description:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newDescriptionTextField" focusTraversable="false" layoutX="96.0" layoutY="199.0" prefHeight="33.0" prefWidth="461.0" promptText="New Description (1-256 characters)" style="-fx-background-color: #ECE9E9; -fx-border-color: #000000;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label fx:id="newDescriptionError" alignment="CENTER" layoutX="37.0" layoutY="243.0" prefHeight="17.0" prefWidth="583.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="395.0" layoutY="280.0" mnemonicParsing="false" onAction="#submitNewDescriptionButton" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #37B958; -fx-border-color: #000000;" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text layoutX="219.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Item Number">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="itemNumberTextField" alignment="CENTER" focusTraversable="false" layoutX="285.0" layoutY="68.0" prefHeight="25.0" prefWidth="80.0" promptText="i.e. 3" style="-fx-background-color: #ECE9E9; -fx-border-color: #000000;">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label fx:id="invalidItemNumberLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="123.0" prefHeight="17.0" prefWidth="583.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="invalidItemNumberHelpLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="373.0" prefHeight="46.0" prefWidth="583.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="144.0" layoutY="280.0" mnemonicParsing="false" onAction="#cancelEditDescription" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #FA5349; -fx-border-color: #000000;" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

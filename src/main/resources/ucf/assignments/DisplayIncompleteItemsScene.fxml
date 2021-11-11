@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
+   <children>
+      <Text layoutX="233.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incomplete Items">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="incompleteItemsTextArea" editable="false" focusTraversable="false" layoutX="48.0" layoutY="53.0" prefHeight="255.0" prefWidth="555.0" promptText="Please press 'Display Items' to view all incomplete items." style="-fx-border-color: #000000;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button focusTraversable="false" layoutX="103.0" layoutY="326.0" mnemonicParsing="false" onAction="#fillIncompleteItemsText" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #9D98F7; -fx-border-color: #000000;" text="Display Items">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button focusTraversable="false" layoutX="416.0" layoutY="326.0" mnemonicParsing="false" onAction="#doneDisplayIncompleteButtonAction" prefHeight="65.0" prefWidth="130.0" style="-fx-background-color: #37B958; -fx-border-color: #000000;" text="Done">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
+   <children>
+      <Text layoutX="169.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Item Number to Delete:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="deleteItemNumber" alignment="CENTER" focusTraversable="false" layoutX="284.0" layoutY="88.0" prefHeight="25.0" prefWidth="80.0" promptText="i.e. 3" style="-fx-background-color: #ECE9E9; -fx-border-color: #000000;">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button focusTraversable="false" layoutX="117.0" layoutY="278.0" mnemonicParsing="false" onAction="#cancelDeleteItemButton" prefHeight="65.0" prefWidth="130.0" style="-fx-border-color: #000000; -fx-background-color: #FA5349;" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button focusTraversable="false" layoutX="403.0" layoutY="278.0" mnemonicParsing="false" onAction="#submitDeleteItemButton" prefHeight="65.0" prefWidth="130.0" style="-fx-border-color: #000000; -fx-background-color: #37B958;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label fx:id="deleteItemError" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="149.0" prefHeight="17.0" prefWidth="607.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="deleteItemHelp" alignment="CENTER" layoutX="22.0" layoutY="190.0" prefHeight="50.0" prefWidth="607.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

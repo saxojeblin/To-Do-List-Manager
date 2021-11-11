@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDeletePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXMLController">
+   <children>
+      <Button layoutX="158.0" layoutY="49.0" mnemonicParsing="false" onAction="#createItemButtonAction" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #9D98F7;" text="Create Item">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="158.0" layoutY="317.0" mnemonicParsing="false" onAction="#clearAllItemsButton" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #9D98F7;" text="Clear All Items">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="158.0" layoutY="185.0" mnemonicParsing="false" onAction="#deleteItemButtonAction" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #9D98F7;" text="Delete Item">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
