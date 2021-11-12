@@ -1,0 +1,57 @@
+@startuml
+
+class App {
+    +void start()
+    +void main()
+}
+
+class FXMLController {
+    +static ArrayList<Item> items
+    +static ToDoList toDoList
+    -Labels
+    -TextFields
+    -TextAreas
+    +void setMainScene()
+    +void initialize()
+    +void allButtonActions()
+}
+
+class FxmlLoader {
+    -Pane view
+    +Pane getPage()
+}
+
+FXMLController <- FxmlLoader
+
+App <- ToDoList
+
+class ToDoList  {
+    -ArrayList<Item> items
+    +ArrayList<Item> getItemList()
+    +void addItem()
+    +void removeItem()
+    +void clearAllItems()
+    +void editItemDescription()
+    +void editDueDate()
+    +void markItemComplete()
+    +String displayAllItems()
+    +String displayIncompleteItems()
+    +String displayCompleteItems()
+    +void saveItems()
+}
+
+ToDoList <- Item
+
+class Item {
+    -String description
+    -String dueDate
+    -Boolean complete
+    +void editDescription()
+    +void editDueDate()
+    +void markComplete()
+    +String getDescription()
+    +String getDueDate()
+    +boolean getComplete()
+}
+
+@enduml
